@@ -70,7 +70,7 @@ class ProductServiceTest {
         var result = productService.findByCategory("Eletronicos");
 
         assertThat(result).hasSize(1);
-        assertThat(result.getFirst().category()).isEqualTo("Eletronicos");
+        assertThat(result.get(0).category()).isEqualTo("Eletronicos");
     }
 
     @Test
